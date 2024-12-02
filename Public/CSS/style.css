@@ -1,0 +1,364 @@
+/* Fuentes de titulo */
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Fuentes de titulos articule */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* Fuentes de h2 y h3 del aside */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Fuentes de los parrafos del aside */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Fuentes de los titulos de los postres */
+
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*ESTILOS HEADER*/
+
+
+
+header{
+    padding: 60px;
+    text-align: center;
+    background-image: url("../Img/pexels-ella-olsson-572949-1640774.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+header div{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(141, 135, 135, 0.356);
+    color: white;
+    font-size: 1.1rem;
+
+}
+
+h1 {
+    font-size: 3.1rem;
+    font-family: "Birthstone", cursive;
+    
+}
+
+#minititle {
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    .tamanorecetario{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        background-position: center;
+    }
+}
+
+/* Estilo navbar */
+
+.navbar- {
+    display: flex;
+    justify-content: center;
+    background-color: #464F51;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.navbar- a{
+    color: azure;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar- a:hover {
+    background-color: brown;
+    border-radius: 2%;
+    /* con esto hago que cyando el raton pase arrba de esto los a se cambien a ese color */
+}
+/*cuando se achique la pantalla se alinian uno abajo del otro */
+@media (max-width: 800px){
+    .navbar- {flex-direction: column;
+    position: unset;}
+    .navbar- a {
+        text-align: center;
+
+    }
+}
+
+/* ESTILOS DE PARTE PRINCIPAL */
+
+.principal {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    flex-basis: 25%;
+    background-color: #DDA448;
+    padding: 10px;
+    border-bottom: 1%;
+}
+
+main {
+    flex-basis: 75%;
+    background-color: #e7cb7c;
+}
+
+@media (max-width: 800px){
+    .principal{
+        flex-direction: column-reverse;
+    }
+
+    aside img {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+
+    /* aside { 
+    display: none;
+    } esto hace que se desaparezca el aside */
+}
+
+/* Estilos dentro del aside */
+
+.image img {
+    width: 90%;
+    border-radius: 10px;
+    text-align: center;
+    object-fit: cover;
+    transition: 0.5s all ease-in-out;
+}
+
+.image:hover img {
+    transform: scale(1.05);
+}
+.asidetitle{
+    text-decoration: underline;
+    font-family: "Playfair Display", serif;
+}
+
+aside p {
+    font-family: "Outfit", sans-serif;
+}
+
+.maintitle{
+    text-decoration: underline;
+    font-size: xx-large;
+}
+
+@media (max-width: 800px){
+    .image img {width: 60%;
+    align-items: center;
+    }
+}
+
+/*ESTILOS DENTRO DE MAIN */
+
+main {
+    border: solid 15px #e7cb7c;
+}
+
+.maintitle {
+    font-family: "Lobster", sans-serif;
+}
+
+.subtitulomain {
+    font-size: 25px;
+}
+
+main h5 {text-align: right;}
+
+main img {
+    margin: auto;
+    padding: auto;
+    width: 70%;
+    object-fit: cover;
+    border-radius: 15px;
+    align-content: center;
+    display: flex;
+    justify-items: center;
+}
+
+main .leermas{
+    margin: 15px;
+    background-color: #b6863a;
+    color: cornsilk;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+main .leermas:hover {
+    background-color: brown;
+    border-radius: 10px;
+}
+main div {
+    align-items: center; 
+    display: flex;
+    justify-content: center;
+}
+
+
+/* estilo footer */
+
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: #9b7230;
+    color: aliceblue;
+}
+
+#colorformulario {
+    background-color: rgb(194, 173, 142);
+    color: black;
+}
+
+/* Estilos formulario */
+
+form {
+   padding: 40px;
+   background-color: rgb(243, 224, 195);
+   border: 5px solid rgb(206, 190, 165);
+   text-align: center;
+   height: 100%;
+
+}
+
+label {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*form div {
+    margin: auto;
+    padding: auto;
+    width: fit-content;
+    background-color: rgba(218, 201, 176, 0.582);
+} */
+
+fieldset{
+    display: grid;
+    grid-template-columns: 20vw 30vw;
+    grid-row-gap: 20px;
+    grid-column-gap: 15px;
+    margin: auto;
+    width: fit-content;
+    font-size: 1.2rem;
+    border: 3px solid dimgray;
+}
+
+legend {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 800px){
+    fieldset {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* RECETAS DE POSTRES */
+
+#bodypostres {
+    background-color: rgb(148, 148, 148);
+}
+
+.parrafogrande {
+    font-size: 20px;
+}
+
+.container-fluid {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.titulospostres {
+    font-family: "Sarabun", sans-serif;
+    text-decoration: underline;
+}
+
+.receta {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #e7cb7c;
+}
+
+.tamanocarrusel{
+    width: 70%;
+    margin: auto;
+}
+
+.receta-img {
+    margin: auto;
+    width: 75%;
+}
+
+.receta-img img {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.carrusel-item {
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+@media (max-width: 800px) {
+    /*.carrusel-item img {
+        object-fit: contain;
+        height: auto;
+        border-radius: 5%;
+    }*/
+    .receta {
+        width: 100%;
+    }
+
+    .container-fluid {
+        margin-bottom: 0;
+        width: 100%;
+    }
+}
+
+#colordelboton{
+    background-color: #e7cb7c;
+    border: solid color #e7cb7c;
+}
+
+#colordelboton2{
+    background-color: #e7cb7c;
+    border: solid color #e7cb7c;
+}
